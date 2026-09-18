@@ -1,32 +1,22 @@
-# React + TypeScript + Vite
+# virtual-patient
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Virtual Patient App (React + TypeScript + Vite)
 
-Currently, two official plugins are available:
+Этот проект создан на основе шаблона Vite + React + TypeScript и использует Oxlint для проверки качества кода.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Используемые технологии
 
-## React Compiler
+- React 18
+- TypeScript
+- Vite
+- @vitejs/plugin-react (Oxc)
+- Oxlint
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## О проекте
 
-## Expanding the Oxlint configuration
+Приложение "Virtual Patient" — это интерактивная обучающая платформа, позволяющая моделировать клинические случаи, выбирать симптомы, проводить диагностику и тренировать клиническое мышление.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Команды для разработки
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+Установка зависимостей:
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
